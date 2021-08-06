@@ -1,7 +1,15 @@
+import React from 'react';
 import './App.css';
+//components 
+//grid component
+import CardGrid from './components/CardGrid.js'
+
+//scoreboard component
+
+
 
 //generate a grid of 9 or 12 spaces 
-//id of those spaces must identify with the image/card and not the space to see if it'ss been chosen twice
+//id of those spaces must identify with the image/card and not the space to see if it's been chosen twice
 
 //add game instructions at the top left
 //add a section for the score board - score and best score top right 
@@ -15,11 +23,10 @@ import './App.css';
 //win function for when score reaches 12 (if only 12 images)
 
 
-
 function App() {
   return (
     <div className="App">Hello World
-
+    <CardGrid />
     </div>
   );
 }
