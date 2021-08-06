@@ -1,6 +1,16 @@
 
 
-.App { 
+.header { 
+  display: flex;
+  justify-content: center;
+}
+
+.instructions { 
+  display: flex;
+  justify-content: center;
+}
+
+.game-board { 
   display: flex;
   justify-content: center;
 }

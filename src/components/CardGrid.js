@@ -1,5 +1,12 @@
 import React from 'react';
 
+
+//generate a grid of 9 or 12 spaces 
+//id of those spaces must identify with the image/card and not the space to see if it's been chosen twice
+
+//randomly assign image cards to spaces 
+//set it to regenerate after each click. useEffect with the dependancy changing for each click
+
 const CardGrid = () => { 
 
 
