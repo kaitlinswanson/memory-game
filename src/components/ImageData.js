@@ -3,7 +3,7 @@ export const imgData = [
     {
         id: 1,
         img:
-          "https://tvline.com/wp-content/uploads/2015/05/brooklyn-nine-nine-s2-finale.jpg?resize=512,355",
+          "https://a1cf74336522e87f135f-2f21ace9a6cf0052456644b80fa06d4f.ssl.cf2.rackcdn.com/images/characters_opt/p-Brooklyn-99-Andy-Sanberg.jpg",
         text: "Jake Peralta",
       },
 
@@ -23,19 +23,19 @@ export const imgData = [
       {
         id: 4,
         img:
-          "https://media.thetab.com/blogs.dir/90/files/2020/04/screenshot-2020-04-20-at-170615.png",
+          "https://cdn.costumewall.com/wp-content/uploads/2019/06/captain-holt-costume.jpg",
         text: "Captain Holt",
       },
       {
         id: 5,
         img:
-          "https://i.pinimg.com/originals/5d/dc/2b/5ddc2b70920dbe6cd3c0e2e51748ca41.jpg",
+          "https://64.media.tumblr.com/758a64141bb67d574a7368966e39b1a1/91d1395566025c24-9a/s640x960/9e0a7713579f9ffc2eef4c1996d026eaebd30661.jpg",
         text: "Kevin Cozner",
       },
       {
         id: 6,
         img:
-          "https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F6%2F2018%2F06%2Fstewartrunning-2-2000.jpg&q=85",
+          "https://i2-prod.mirror.co.uk/incoming/article17891294.ece/ALTERNATES/s615b/0_Stewart.jpg",
         text: "Cheddar The Dog",
       },
       {
@@ -48,7 +48,7 @@ export const imgData = [
       {
       id: 8,
       img:
-        "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/chelsea-peretti-1549029233.jpg",
+        "https://a1cf74336522e87f135f-2f21ace9a6cf0052456644b80fa06d4f.ssl.cf2.rackcdn.com/images/characters_opt/p-Brooklyn-99-Chelsea-Peretti.jpg",
       text: "Gina Linetti",
       },
       
@@ -62,7 +62,7 @@ export const imgData = [
        {
         id: 10,
         img:
-          "https://img.cinemablend.com/filter:scale/quill/f/c/3/c/5/4/fc3c54251b07587550e12746ecde068bb540aad3.png?mw=600",
+          "https://i.pinimg.com/736x/4a/66/4e/4a664e82be9ca2129e02378d0b83343b.jpg",
         text: "Michael Hitchcock",
       },
 
