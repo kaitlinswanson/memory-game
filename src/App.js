@@ -24,7 +24,7 @@ function App() {
 
   //set states 
 
-  //const [image, setClicked] = useState("unclicked"); 
+  const [image, setClicked] = useState("unclicked"); 
   //const [count, setCount] = useState(0);
 
   //useEffect(() => {
@@ -47,8 +47,8 @@ function App() {
       Click the same image twice and you have to start over! </div>
     <div className="game-board">
     <CardGrid 
-   /* image={image} */
-   /* setClicked={setClicked} */
+   image={image} 
+   setClicked={setClicked}
     />
     </div>
     </div>
