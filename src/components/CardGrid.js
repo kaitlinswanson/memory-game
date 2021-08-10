@@ -1,4 +1,5 @@
 import React from 'react';
+import { imgData } from './imageData.js';
 
 //components 
 
@@ -11,9 +12,19 @@ import React from 'react';
 const CardGrid = () => { 
 
 
+    function randomIntFromInterval(min, max) { // min and max included 
+        return Math.floor(Math.random() * (max - min + 1) + min)
+      }
+      
+      const randomNumber = randomIntFromInterval(0, 11)
+      const memoryImage = imgData[randomNumber];
+      console.log(randomNumber);
+
 return (
     <div className="card-container">
-        <div className="cards" id="card-1"></div>
+        <div className="cards" id="card-1">
+            <img alt={memoryImage.text} src={memoryImage.img}></img>
+        </div>
         <div className="cards" id="card-2"></div>
         <div className="cards" id="card-3"></div>
         <div className="cards" id="card-4"></div>

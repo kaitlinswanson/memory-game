@@ -30,26 +30,28 @@ export const imgData = [
         id: 5,
         img:
           "https://i.pinimg.com/originals/5d/dc/2b/5ddc2b70920dbe6cd3c0e2e51748ca41.jpg",
-        text: "Kevin",
+        text: "Kevin Cozner",
       },
       {
         id: 6,
         img:
           "https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F6%2F2018%2F06%2Fstewartrunning-2-2000.jpg&q=85",
-        text: "Cheddar",
+        text: "Cheddar The Dog",
       },
       {
         id: 7,
         img:
-          "https://static.wikia.nocookie.net/brooklynnine-nine/images/b/bf/Amy_in_uniform.png/revision/latest/scale-to-width-down/864?cb=20190907232530",
+          "https://pbs.twimg.com/media/Elhs1aDVMAAnv3I.jpg",
         text: "Amy Santiago",
       },
+
       {
       id: 8,
       img:
         "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/chelsea-peretti-1549029233.jpg",
       text: "Gina Linetti",
       },
+      
       {
         id: 9,
         img:
@@ -74,7 +76,7 @@ export const imgData = [
       {
         id: 12,
         img:
-          "https://static.wikia.nocookie.net/brooklynnine-nine/images/b/b7/Gray_Star_Mutual-Adrian_Pimento.png/revision/latest?cb=20190511094319",
+          "https://external-preview.redd.it/g021wGDIxFFJI2IqU8uHL0hnckFZ6oXDKFgAYfh-tfI.jpg?auto=webp&s=787aa7d5f6eb4cb91ab272ffe726877c827060df",
         text: "Adrian Pimento",
       },
 
