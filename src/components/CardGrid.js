@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { imgData } from './imageData.js';
 import { generateRandom } from './generateRandom.js'
 
@@ -10,12 +10,18 @@ import { generateRandom } from './generateRandom.js'
 //randomly assign image cards to spaces 
 //set it to regenerate after each click. useEffect with the dependancy changing for each click
 
-const CardGrid = () => { 
-//generate random string 
-//use image index in html
+const CardGrid = (props) => { 
+
+    const [clickedCards, setClickedCards] = useState([]); 
+
+
+    
+//randomly assign image cards to spaces 
 let newBoard = []
+
     function shuffleBoard() {
       
+        newBoard = [];
         const newImage1 = imgData[generateRandom()]
         const newImage2 = imgData[generateRandom()]
         const newImage3 = imgData[generateRandom()]
@@ -35,47 +41,65 @@ let newBoard = []
 
     shuffleBoard()
 
-      console.log(newBoard)
+    useEffect(() => {
+        shuffleBoard();
+      });
 
 
+      function checkClicked(e) {
+          if(!clickedCards.includes(e.target.id)) {
+              setClickedCards((clickedCards) => [
+                  ...clickedCards, 
+                  (e.target.id), ]);
+                  props.increaseScore();
+              } else { 
+                  props.resetScore();
+                  setClickedCards([0])
+              }
+          }
+      
+
+     
+
+   console.log(newBoard)
 
 return (
     <div className="card-container">
         <div className="cards" id="card-1">
-            <img alt={newBoard[0].text} src={newBoard[0].img}></img>
+            <img  onClick={(e) => {checkClicked(e)}} className="images" id={newBoard[0].id} alt={newBoard[0].text} src={newBoard[0].img}></img>
         </div>
         <div className="cards" id="card-2">
-            <img alt={newBoard[1].text} src={newBoard[1].img}></img>
+            <img className="images" alt={newBoard[1].text} src={newBoard[1].img}></img>
         </div>
         <div className="cards" id="card-3">
-            <img alt={newBoard[2].text} src={newBoard[2].img}></img>
+            <img className="images" alt={newBoard[2].text} src={newBoard[2].img}></img>
         </div>
         <div className="cards" id="card-4">
-            <img alt={newBoard[3].text} src={newBoard[3].img}></img>
+            <img className="images" alt={newBoard[3].text} src={newBoard[3].img}></img>
         </div>
         <div className="cards" id="card-5">
-            <img alt={newBoard[4].text} src={newBoard[4].img}></img>
+            <img className="images" alt={newBoard[4].text} src={newBoard[4].img}></img>
         </div>
         <div className="cards" id="card-6">
-            <img alt={newBoard[5].text} src={newBoard[5].img}></img>
+            <img className="images" alt={newBoard[5].text} src={newBoard[5].img}></img>
         </div>
         <div className="cards" id="card-7">
-            <img alt={newBoard[6].text} src={newBoard[6].img}></img>
+            <img className="images" alt={newBoard[6].text} src={newBoard[6].img}></img>
         </div>
         <div className="cards" id="card-8">
-            <img alt={newBoard[7].text} src={newBoard[7].img}></img>
+            <img className="images" alt={newBoard[7].text} src={newBoard[7].img}></img>
         </div>
         <div className="cards" id="card-9">
-            <img alt={newBoard[8].text} src={newBoard[8].img}></img>
+            <img className="images" alt={newBoard[8].text} src={newBoard[8].img}></img>
         </div>
         <div className="cards" id="card-10">
-            <img alt={newBoard[9].text} src={newBoard[9].img}></img>
+            <img className="images" alt={newBoard[9].text} src={newBoard[9].img}></img>
         </div>
         <div className="cards" id="card-11">
-            <img alt={newBoard[10].text} src={newBoard[10].img}></img>
+            <img className="images" alt={newBoard[10].text} src={newBoard[10].img}></img>
         </div>
         <div className="cards" id="card-12">
-            <img alt={newBoard[11].text} src={newBoard[11].img}></img>
+            <img className="images" alt={newBoard[11].text} src={newBoard[11].img}></img>
         </div>
     </div>
 

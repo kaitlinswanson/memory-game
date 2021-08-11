@@ -1,11 +1,11 @@
-import React, { useState }from 'react';
+import React, {useState} from 'react';
 import './App.css';
 
 //components 
 //grid component
 import CardGrid from './components/CardGrid.js'
-
 //scoreboard component
+import ScoreBoard from './components/ScoreBoard.js'
 
 
 
@@ -25,19 +25,25 @@ function App() {
 
   //set states 
 
-  const [image, setClicked] = useState("unclicked"); 
-  //const [count, setCount] = useState(0);
+  const [count, setCount] = useState(0);
 
-  //useEffect(() => {
+  //function clickHandler(e) {
+
+  //}
+
+ function increaseScore() {
+  setCount(prevCount => prevCount + 1)
+ }
+
+  function resetScore() {
+  setCount(0)
+  }
+
+ //useEffect(() => {
     //use onClick "checkClicked" for each div image
-    //const checkClicked = () => {
-    //  if (image === "unclicked") {
-      //  setClicked("clicked");
-      //  setCount(count + 1)
-     // } else {
-     //   setCounter("0");
-     // }
-   // };
+
+    //document.getElementsByClassName('images').addEventListener("click", checkClicked)
+    //}, [image, count]);
 
 
   return (
@@ -46,10 +52,15 @@ function App() {
       <div className="instructions">How To Play&#58; Click on images to earn points. Remember which ones you've already selected! 
       <br></br>
       Click the same image twice and you have to start over! </div>
-    <div className="game-board">
+      <ScoreBoard 
+         count={count}
+         
+         />
+    <div  className="game-board">
     <CardGrid 
-   image={image} 
-   setClicked={setClicked}
+      increaseScore={increaseScore}
+      resetScore={resetScore}      
+             
     />
     </div>
     </div>
