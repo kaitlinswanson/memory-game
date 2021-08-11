@@ -1,4 +1,10 @@
 
+body {
+  background-image: linear-gradient(120deg, #eff5ced5 0%, #eaeccea9 100%);
+  color: rgba(0, 0, 0, 0.562);
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+} 
 
 .header { 
   display: flex;
@@ -39,4 +45,11 @@
   display: flex;
   justify-content: center;
   margin-top: 10px;
+  font-size: larger;
+
+}
+
+#top-score {
+  margin-left: 10px;
+
 }

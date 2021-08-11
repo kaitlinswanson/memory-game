@@ -9,8 +9,8 @@ const ScoreBoard = ({count, highScore}) => {
 
 return (
     <div className="score-board">
-        <div id="score">Score:{count}</div>
-        <div id="top-score">Best Score:{highScore}</div>
+        <div id="score">Score: {count}</div>
+        <div id="top-score">Best Score: {highScore}</div>
     </div>
 );
  };
