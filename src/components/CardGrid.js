@@ -52,7 +52,9 @@ let newBoard = []
                   ...clickedCards, 
                   (e.target.id), ]);
                   props.increaseScore();
+                  props.checkWin(clickedCards.length)
               } else { 
+                  props.findHighScore(clickedCards.length)
                   props.resetScore();
                   setClickedCards([0])
               }

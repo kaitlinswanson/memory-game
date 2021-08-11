@@ -9,27 +9,14 @@ import ScoreBoard from './components/ScoreBoard.js'
 
 
 
-
-
-//add a section for the score board - score and best score top right 
-
-
-//add counter + 1 if prev clicks on card === 0 and reset counter if it has a prev click 
-
-//update scoreboard for "best score" every time counter resets - if new score is higher than prev best score, bestscore = new score
-
 //win function for when score reaches 12 (if only 12 images)
 
 
 function App() {
 
   //set states 
-
   const [count, setCount] = useState(0);
-
-  //function clickHandler(e) {
-
-  //}
+  const [highScore, setHighScore] = useState(0);
 
  function increaseScore() {
   setCount(prevCount => prevCount + 1)
@@ -39,28 +26,41 @@ function App() {
   setCount(0)
   }
 
- //useEffect(() => {
-    //use onClick "checkClicked" for each div image
+  function findHighScore(length) {
+    if (highScore < length) {
+    setHighScore(length)
+  } else { 
+    setHighScore(highScore)
+  }
+  }
 
-    //document.getElementsByClassName('images').addEventListener("click", checkClicked)
-    //}, [image, count]);
+  function checkWin(length) {
+    if (length >= 12) { 
+    document.getElementById('instructions').innerHTML="You Win!!!"
+    } else { 
+      return;
+    }
+  }
 
 
   return (
     <div className="App">
       <h1 className="header">Test Your Memory!</h1>
-      <div className="instructions">How To Play&#58; Click on images to earn points. Remember which ones you've already selected! 
+      <div id="instructions" className="instructions">How To Play&#58; Click on images to earn points. Remember which ones you've already selected! 
       <br></br>
       Click the same image twice and you have to start over! </div>
       <ScoreBoard 
          count={count}
+         highScore={highScore}
          
          />
+         
     <div  className="game-board">
     <CardGrid 
       increaseScore={increaseScore}
       resetScore={resetScore}      
-             
+      findHighScore={findHighScore} 
+      checkWin={checkWin}      
     />
     </div>
     </div>
