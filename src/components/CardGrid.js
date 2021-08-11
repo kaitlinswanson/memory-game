@@ -61,7 +61,7 @@ let newBoard = []
 
      
 
-   console.log(newBoard)
+   console.log(clickedCards)
 
 return (
     <div className="card-container">
@@ -69,37 +69,37 @@ return (
             <img  onClick={(e) => {checkClicked(e)}} className="images" id={newBoard[0].id} alt={newBoard[0].text} src={newBoard[0].img}></img>
         </div>
         <div className="cards" id="card-2">
-            <img className="images" alt={newBoard[1].text} src={newBoard[1].img}></img>
+            <img onClick={(e) => {checkClicked(e)}} className="images" id={newBoard[1].id} alt={newBoard[1].text} src={newBoard[1].img}></img>
         </div>
         <div className="cards" id="card-3">
-            <img className="images" alt={newBoard[2].text} src={newBoard[2].img}></img>
+            <img onClick={(e) => {checkClicked(e)}} className="images" id={newBoard[2].id} alt={newBoard[2].text} src={newBoard[2].img}></img>
         </div>
         <div className="cards" id="card-4">
-            <img className="images" alt={newBoard[3].text} src={newBoard[3].img}></img>
+            <img onClick={(e) => {checkClicked(e)}} className="images" id={newBoard[3].id} alt={newBoard[3].text} src={newBoard[3].img}></img>
         </div>
         <div className="cards" id="card-5">
-            <img className="images" alt={newBoard[4].text} src={newBoard[4].img}></img>
+            <img onClick={(e) => {checkClicked(e)}} className="images" id={newBoard[4].id} alt={newBoard[4].text} src={newBoard[4].img}></img>
         </div>
         <div className="cards" id="card-6">
-            <img className="images" alt={newBoard[5].text} src={newBoard[5].img}></img>
+            <img onClick={(e) => {checkClicked(e)}} className="images" id={newBoard[5].id} alt={newBoard[5].text} src={newBoard[5].img}></img>
         </div>
         <div className="cards" id="card-7">
-            <img className="images" alt={newBoard[6].text} src={newBoard[6].img}></img>
+            <img onClick={(e) => {checkClicked(e)}} className="images" id={newBoard[6].id} alt={newBoard[6].text} src={newBoard[6].img}></img>
         </div>
         <div className="cards" id="card-8">
-            <img className="images" alt={newBoard[7].text} src={newBoard[7].img}></img>
+            <img onClick={(e) => {checkClicked(e)}} className="images" id={newBoard[7].id} alt={newBoard[7].text} src={newBoard[7].img}></img>
         </div>
         <div className="cards" id="card-9">
-            <img className="images" alt={newBoard[8].text} src={newBoard[8].img}></img>
+            <img onClick={(e) => {checkClicked(e)}} className="images" id={newBoard[8].id} alt={newBoard[8].text} src={newBoard[8].img}></img>
         </div>
         <div className="cards" id="card-10">
-            <img className="images" alt={newBoard[9].text} src={newBoard[9].img}></img>
+            <img onClick={(e) => {checkClicked(e)}} className="images" id={newBoard[9].id} alt={newBoard[9].text} src={newBoard[9].img}></img>
         </div>
         <div className="cards" id="card-11">
-            <img className="images" alt={newBoard[10].text} src={newBoard[10].img}></img>
+            <img onClick={(e) => {checkClicked(e)}} className="images" id={newBoard[10].id} alt={newBoard[10].text} src={newBoard[10].img}></img>
         </div>
         <div className="cards" id="card-12">
-            <img className="images" alt={newBoard[11].text} src={newBoard[11].img}></img>
+            <img onClick={(e) => {checkClicked(e)}} className="images" id={newBoard[11].id} alt={newBoard[11].text} src={newBoard[11].img}></img>
         </div>
     </div>
 
